@@ -1,0 +1,15 @@
+.. _sod:
+
+##################
+Supervisor on duty
+##################
+
+
+Contents:
+
+.. toctree::
+   :maxdepth:5
+
+   Sardinia Radio Telescope (SRT) <srt/index.rst>
+   procedures/index.rst
+
