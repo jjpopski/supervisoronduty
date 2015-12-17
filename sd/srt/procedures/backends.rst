@@ -44,10 +44,10 @@ Innanzitutto è necessario disconnettere il backend dal sistema di controllo del
 
 
 - chiudere la console di Nuraghe
--  ::ref: `chiudere i seguenti container <nuraghe-shutdown>`
+-  :ref: `chiudere i seguenti container <nuraghe-shutdown>`
 
-  - TotalPowerContainer
-  - FitsZillaContainer
+    - TotalPowerContainer
+    - FitsZillaContainer
 
 
 Poi, è necessario accedere al backend  con username root. Da ``nuraghe-mng``::
