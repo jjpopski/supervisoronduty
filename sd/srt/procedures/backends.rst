@@ -12,7 +12,7 @@ Total Power
 
 Il backend ``Total Power`` è raggiungibile all'ip 192.168.200.129
 
-Per verificare se è tale backend è acceso, da una shell di ``nuraghe-mng`` effettuare ping al suo indirizzo ip::
+Per verificare se tale backend è acceso, da una shell di ``nuraghe-mng`` effettuare ping al suo indirizzo ip::
 
    $> ping 192.168.200.129
 
@@ -44,7 +44,7 @@ Innanzitutto è necessario disconnettere il backend dal sistema di controllo del
 
 
 - chiudere la console di Nuraghe
--  ::ref:`chiudere i seguenti container <nuraghe-shutdown>`
+-  ::ref: `chiudere i seguenti container <nuraghe-shutdown>`
 
   - TotalPowerContainer
   - FitsZillaContainer
