@@ -13,7 +13,7 @@ $>tail -f ~/logs/receivers.log
 
 verranno visualizzate le temperature. ``ctrl-c`` per uscire.
 
-L'aggiornamento avviene ogni 3 minuti, pertanto nel caso in cui il timestap
+L'aggiornamento avviene ogni 3 minuti, pertanto nel caso in cui il timestamp
 indichi che è trascorso molto tempo dall'ultima lettura occorre verificare che:
 
 #. NURAGHE sia avviato
