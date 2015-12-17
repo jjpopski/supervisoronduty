@@ -186,7 +186,7 @@ Movimentazione in STOW tramite ECU
 
 
 Nella movimentazione dell'antenna tramite la ECU non si hanno informazioni dell'effettiva posizione
-del telescopio, pertanto **è necessario un controllo visivo da parte di un secondo  un operatore in modo da evitare
+del telescopio, pertanto **è necessario un controllo visivo da parte di un secondo operatore in modo da evitare
 di raggiungere i limit switch**. Il secondo operatore dovrà essere in prossimità di un emergency stop.
 
 Questa è una procedura di emergenza, e  deve essere utilizzata unicamente in caso di malfunzionamento dell' ACU, ovvero 
@@ -205,7 +205,7 @@ Procedura:
 
 - Attivare ECU:
 
-  - Software di controllo ACU deve essere spento. Premere pulsante ``main drive`` anffinché sia  off
+  - Software di controllo ACU deve essere spento. Premere pulsante ``main drive`` affinché sia  off
   -  Verificare che il led ``Main drive ON/OFF`` sia spento;
 
   - ACU deve essere spenta ed effetuato shutdown. **NB se è necessaria la procedura di stow mediante ECU, significa che  ACU e' non funzionante e pertanto si trova nella condizione come se fosse di shutdown**
