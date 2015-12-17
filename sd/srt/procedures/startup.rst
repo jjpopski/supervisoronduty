@@ -23,7 +23,7 @@ Questa console ha 4 desktops virtuali che che hanno le seguenti funzioni:
 
 - Nel desktop virtuale **MNG** digitare in una shell di terminale::
 
-    $> nuragheTag
+    $> nuragheStable
 
   il prompt deve apparire come nella figura qua sotto:
   
@@ -51,7 +51,7 @@ Avvio di ACS
    :align: center
 
 - attendere che nel log tab ACS appaia **ACS is up and running**
-  E' necessario, indicativamente, circa un minuto affinché ACS sia *up and running*
+  E' necessario, indicativamente, circa un minuto affinché ACS sia *up and running*.
 
 Avvio dei *containers*
 ----------------------------
