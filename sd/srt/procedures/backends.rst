@@ -44,7 +44,7 @@ Innanzitutto è necessario disconnettere il backend dal sistema di controllo del
 
 
 - chiudere la console di Nuraghe
--  :ref: `chiudere i seguenti container <nuraghe-shutdown>`
+- chiudere i seguenti container:
 
     - TotalPowerContainer
     - FitsZillaContainer
@@ -82,7 +82,7 @@ Controllo del backend senza ausilio di NURAGHE
 Prima di operare sul backend  è necessario chiudere ogni connessione con il backend: 
 
 - chiudere la console di Nuraghe
--  ::ref:`chiudere i seguenti container <nuraghe-shutdown>`
+- chiudere i seguenti container:
 
   - TotalPowerContainer
   - FitsZillaContainer
