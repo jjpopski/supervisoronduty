@@ -139,12 +139,12 @@ OVERRIDE EMERGENCY STOP
 - prendere dalla control room la chiave per aprire il pannello del quadro +C1
 - Recarsi in stanza ALER
 - attivare modalità      ``service`` 
-  impostando on  nell  interruttore a chiave ``Service Mode`` 
-- attivare modalità ``overrride`` premendo il pulsante ``override`` ne pannell del quadro +C1.
+  impostando ``on``  nell'interruttore a chiave ``Service`` 
+- attivare modalità ``override`` premendo il pulsante ``override`` nel pannello del quadro +C1.
   il led giallo acceso indica che la modalità *override* è attiva
 - abilitare il PCU mettendo il selettore di sinistra   su Y (nel caso si voglia muovere in azimuth) 
     o Z (per l 'elevazione)
-- impostare il selettore del  su U (override) quello di destra.
+- impostare il selettore del PCU su U (override) quello di destra.
 
 A questo punto il sistema è pronto per la procedura di *override*. Se non viene premuto il 
 pulsante di rilascio, posto  lateralmente nel PCU, i led F1,F4,F7,F3,F6,F9 sono accesi. Le seguenti azioni devono
@@ -157,7 +157,7 @@ essere eseguite tramite il PCU,  mantenendo premuto il pulsante di rilascio, a m
 
 Per continuare la procedura occorre:
 
-- premere il pulsante F1 per il  riconoscimento dell' emercency stop (ACK) 
+- premere il pulsante F1 per il  riconoscimento dell' emergency stop (ACK) 
 - premere il pulsante F2 se è necessario riconscere un *fault* (led "FAULT" acceso nel ECP)
 - premere il pulsante F3 per abilitare l'asse selezionato. 
 - premere il pulsante F4 per attivare lo slewing
