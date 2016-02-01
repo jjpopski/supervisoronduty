@@ -17,7 +17,7 @@ Di solito si può manifestare dopo una procedura di ``unstow``, all'atto di atti
 Nel pannello di controlo del :ref:`PCP <pcp>`  uno dei riquadri ``error`` diventa rosso e l'asse corrispondente non viene attivato
 
 
-.. figure:: images/servotimeout.png
+.. figure:: figure/servotimeout.png
    :alt: Servo timeout
    :scale: 75%
 

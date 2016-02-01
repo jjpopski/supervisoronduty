@@ -8,7 +8,7 @@ Verificare che Nuraghe sia attivo
 - Sulla console nuraghe-mng, selezionare il desktop virtuale MNG
 - Individuare il pannello **ACS Command Center**
  
-.. figure:: images/nuraghe_up05.png
+.. figure:: images/nuraghe_up06.png
    :alt: nuraghe up
    :align: center
 
