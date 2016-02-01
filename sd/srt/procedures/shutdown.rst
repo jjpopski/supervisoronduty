@@ -32,7 +32,7 @@ Shutdown di NURAGHE
   #. nel caso in cui non si abbia il controllo del prompt, premere ``ctrl-c``
   #. eseguire il comando::
 
-     $ ~/SRTStopActiveSurfaceContainer
+     $ ~/SRTStopActiveSurfaceContainer.sh
 
 
 - Su ACS Command Center, chiudere l' ``ACS Suite`` premendo il pulsante ``stop`` nell'omonimo riquadro.
