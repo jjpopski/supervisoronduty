@@ -28,7 +28,7 @@ NURAGHE ha accesso tramite tcp/ip  ad altre risorse:
 Postazioni utente
 ----------------------------------------------------------
 
-I Sod hanno accesso alle seguenti postazioni utente:
+Gli SD hanno accesso alle seguenti postazioni utente:
 
 - nuraghe-obs1
 - nuraghe-mng
