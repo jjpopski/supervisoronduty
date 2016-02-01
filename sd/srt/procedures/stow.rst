@@ -68,5 +68,11 @@ Pertanto, occorre:
 In caso di errori o emergency stop attivi è necessario analizzare il problema e valutare come procedere.
 Se NURAGHE non permette di riconoscere errori o emergency stop è necessario passare alla modalità locale (vedi procedure).
 
+AUTOSTOW (Wind Park)
+--------------------
 
+Nel caso in cui il vento di raffica superi i 50 KM/h il software di controllo invia un comando di ``stow`` e l'antenna verrà parcheggiata
+in automatico
+
+.. warning:: La responsabilità ultima per la messa in sicurezza del sistema rimane del supervisor on duty, nonostante la procedura di autostow
  
