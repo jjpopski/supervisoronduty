@@ -215,20 +215,20 @@ Procedura:
   -  verificare che il led ``emergency drive`` sia acceso
   -  il pulsante ``main drive on`` deve essere premuto di nuovo per commutare sull' ECU.
   -  verificare che il led ``Main drive ON/OFF`` sia acceso;
-  -  Tutti gli eventuali errori o interlocks devono essere resettati premento i pulsanti ``fault-acknowledge`` o ``interlock-acknowledge``   
+  -  Tutti gli eventuali errori o interlocks devono essere resettati premendo i pulsanti ``fault-acknowledge`` o ``interlock-acknowledge``   
  
 - selezionare asse "Elevation" tramite interruttore ``axis drive selector switch``
-- verifiare che il led dell'asse selezionato sia acceso
+- verificare che il led dell'asse selezionato sia acceso
 - selezionare motori (non selezionare il motore non funzionante)
 - selezionare la velocità desiderata traminte l'interruttore ``Velocity low/high``
 - individuare i pulsanti ``Move up/down`` per la movimentazione dell'antenna nell'ECP  
-- muovere l'antenna in elevazione a velocità positiva (elevazione crescente.
+- muovere l'antenna in elevazione a velocità positiva (elevazione crescente).
 - interrompere il movimento quando il led verde "stow position reached" si accende. 
 - se si supera la posizione di *stow*, il led verde si spegne e pertanto è necessario:
 - interrompere il movimento;
 - muovere l'antenna in elevazione a velocità negativa fino a raggiungere la posizione di stow
 - asscurarsi che effettivamente la posizione di stow sia stata raggiunta tramite ispezione visiva.
-- movimentare lo *stow pin* mediante'apposito pulstante del ECP
+- movimentare lo *stow pin* mediante apposito pulstante del ECP
 - attendere circa un minuto e 20 secondi finché lo *stow pin* e' completamente inserito ed il rispettivo
   led e' illuminato (stow pin in/antenna stowed)
 
