@@ -38,7 +38,7 @@ Nel pannello è importante tenere sotto controllo le seguenti informazioni:
      **l'antenna è in sicurezza**
 #. stato degli assi: *active* o *inactive*. La movimentazione è possibile se gli assi sono attivati.
 #. riquadri *error* e *warning*, a sinistra quelli relativi all'asse di azimuth, a destra quelli per l'asse di elevazione. 
-   se sono verdi, l'antenna è operativa. Se i *warning* diventano gialli, vuol dire che c'è un'informazione utile ma che non pregiudica
+   Se sono verdi, l'antenna è operativa. Se i *warning* diventano gialli, vuol dire che c'è un'informazione utile ma che non pregiudica
    il funzionamento del telescopio. Ad esempio sono  *warning* il raggiungimento delle posizioni di pre-limit.
    Se uno o entrambi i riquadri *error* sono rossi, è intervenuto un problema che ha bloccato il movimento del telescopio.
    Con il mouse, posizionarsi sul riquadro per leggere il tipo di errore intervenuto.
