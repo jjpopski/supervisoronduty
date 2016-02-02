@@ -54,7 +54,7 @@ Nel pannello di controllo :ref:`PCP <pcp>`  i riquadri *error* sono in condizion
 indicano l'errore **err_Power_Error**. Inoltre, in :ref:`jlog <jlog>` appare il messaggio di errore **MAIN POWER ERROR**, con livello 
 di priorita **CRITICAL**
 
-L'errore è individuabile anche tramite  su jlog, in quanto viene segnalato con  priorità CRITICAL, con messaggio "MAIN POWER ERROR".  
+L'errore è individuabile anche tramite jlog, in quanto viene segnalato con  priorità CRITICAL, con messaggio "MAIN POWER ERROR".  
 
 
 Soluzione
