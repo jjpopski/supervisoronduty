@@ -73,7 +73,7 @@ ACU-PCP
 Primary Control Panel, è la replica del ACU_LCP in Control Room. 
 
 Se la modalità di controllo dell'ACU è  impostata su :ref:`remoto <antenna>` 
-il pannello è unicamente informativo e pertanto i pulsanti non sortiscono nessuna azione e non aprire finestre informative.
+il pannello è unicamente informativo e pertanto i pulsanti non sortiscono nessuna azione e non aprono finestre informative.
 
  
 
