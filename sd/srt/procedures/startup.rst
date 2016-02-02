@@ -12,7 +12,7 @@ Avvio di Nuraghe
 
 NURAGHE deve essere avviato dalla console *nuraghe-mng*  (username gavino)
 
-Questa console ha 4 desktops virtuali che che hanno le seguenti funzioni:
+Questa console ha 4 desktops virtuali che hanno le seguenti funzioni:
 
 - **MNG** :math:`\rightarrow`  per eseguire ACS Command Center e gli altri tool ACS
 - **CONSOLE** :math:`\rightarrow`  per le finestre della console 
