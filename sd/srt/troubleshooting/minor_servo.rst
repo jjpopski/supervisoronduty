@@ -43,7 +43,7 @@ Problemi di puntamento
 
 Problema
 --------
-La sorgente non viene puntata à l'errore di puntamento è molto alto. 
+La sorgente non viene puntata o l'errore di puntamento è molto alto. 
 
 Soluzione
 ---------
