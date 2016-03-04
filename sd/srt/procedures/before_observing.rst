@@ -3,7 +3,7 @@ Azioni propedeutiche all'osservazione
 *************************************
 Prima che inizi l'osservazione, il SoD *deve sempre*:
 
--  :ref:`nuraghe-is-ready`, altrimenti :ref:`lo si avvii <nuraghe-startup>`
+-  :ref:`nuraghe-is-ready`, altrimenti :ref:`lo si avvii <nuraghe>`
 - verificare che non siano attivi emergency stop.
 
 Se sono attivi emergency stop:

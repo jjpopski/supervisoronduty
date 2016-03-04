@@ -16,19 +16,19 @@ STOW mediante NURAGHE
 
 Da ``operator input`` su **nuraghe-mng** eseguire i comandi::
 
->goTo=*,89d
->servoPark
->asPark
+   >goTo=*,89d
+   >servoPark
+   >asPark
 
 Nel caso si sia usato il derotatore eseguire il comando::
 
->derotatorPark
+  >derotatorPark
 
 Quando l'antenna è arrivata a 89° di elevazione eseguire::
 
->antennaPark
+  >antennaPark
 
-.. important::
+.. warning::
    La procedura è completa quando sulla console  ACU-PCP, compare il riquadro rosso **AXIS BLOCKED**, 
    e gli assi di azimuth ed elevazione sono disattivati.
 
@@ -48,7 +48,7 @@ premere il  **pulsante verde**, posizionato sul tavolo in prossimità della cons
    nella peggiore delle ipotesi saranno necessari  15 minuti per raggiungerla. Questo poiché, in caso di vento forte, la bassa velocità
    limita l'assorbimento di corrente. 
 
-.. important::
+.. warning::
    La procedura è completa quando sulla console  ACU-PCP, compare il riquadro rosso **AXIS BLOCKED**, 
    e gli assi di azimuth ed elevazione sono disattivati.
 
@@ -72,7 +72,17 @@ AUTOSTOW (Wind Park)
 --------------------
 
 Nel caso in cui il vento di raffica superi i 50 KM/h il software di controllo invia un comando di ``stow`` e l'antenna verrà parcheggiata
-in automatico
+in automatico.
 
-.. warning:: La responsabilità ultima per la messa in sicurezza del sistema rimane del supervisor on duty, nonostante la procedura di autostow
+.. warning:: 
+   La responsabilità ultima per la messa in sicurezza del sistema rimane del supervisor on duty, nonostante la procedura di autostow
  
+Per uscire dallo stow, da ``operator input`` eseguire i comandi::
+
+  >antennaUnstow
+
+
+attendere l'uscita dallo stow ed eseguire il comando::
+
+  >antennaTrack
+

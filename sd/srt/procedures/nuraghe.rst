@@ -1,3 +1,7 @@
+.. _nuraghe:
+
+
+
 ======================
 NURAGHE
 ======================
@@ -63,13 +67,14 @@ Avvio dei *containers*
 .. index:: single: NURAGHE - Avvio container
 
 
-
 - individuare il riquadro **Containers**: contiene la lista dei container necessari, tranne che per il *LocalOscillatorsContainer*
   che necessita di una procedura di avvio separata
 
 - Per ciascuno dei container, cliccare sul triangolo verde (è simile al simbolo tasto play di un lettore di musicassette)
 - Con l'avvio del container, viene aperta la log tab con il nome del container, oppure nel caso in cui tale log tab  fosse
-  già aperta, viene messa in evidenza
+  già aperta, viene messa in evidenza.
+- Avviare i container Local Oscillators e quelli della superficie attiva secondo le procedure sotto elencate.
+- Verificare che tutti i container siano attivi, controllando :ref:`l'elenco dei container <nuraghe-is-ready>`
 
 .. note::
   
@@ -106,19 +111,19 @@ verificare che siano già aperte due *shell* su ``gavino@nuraghe-as``. Una shell
 
 Nel caso in cui le due shell non fossero già aperte,aprire due terminali in entrambi digitare il comando::
 
-$> as-ssh
+  $> as-ssh
 
 
 Tale comando effettua una connessione ssh verso ``nuraghe-as``. 
 Quindi su una shell digitare i comandi::
 
-$> nuragheStable
-$> asContainers
+  $> nuragheStable
+  $> asContainers
 
 Nell'altra shell digitare il comando::
 
-$> nuragheStable
-$> SRTActiveSurfaceGUIClient &
+  $> nuragheStable
+  $> SRTActiveSurfaceGUIClient &
 
 La procudura è completata quando nellla prima shell appaiono i messaggi ``sectorX done`` dove ``x`` indica il numero del settore
 della superficie attiva. Pertanto appariranno 8 messaggi, con x da uno a 8 (N.B potrebbero non essere in sequenza.
@@ -130,15 +135,12 @@ Console di NURAGHE
 .. index:: single: NURAGHE - Avvio  console
 
 
-.. toctree::
-   :maxdepth: 1
 
-   is_ready.rst
 
 
 Dal desktop virtuale ``CONSOLE`` di  ``nuraghe-obs1`` aprire una shell ed eseguire il comando::
 
-$> nuragheConsole
+  $> nuragheConsole
 
 *******************
 Shutdown di NURAGHE 
@@ -202,4 +204,22 @@ Pertanto, se uno di essi deve essere riavviato anche gli altri lo devono essere.
  #. Riavviare  ``ManagementContainer``
  #. Riavviare ``TotalPowerContainer``,  ``XContainer`` e ``RoachContainer`` 
  #. Riavviare la console
+
+
+Chiusura container ricevitori
+************************************************************
+
+Se durante le osservazioni è necessario chiudere uno dei container dei ricevitori è importante assicurarsi che non si chiuda il ricevitore in uso.
+Pertanto verificare nella console di nuraghe il ricevitore in uso, che nell'esempio nella figura sotto è il ricevitore CCB.
+
+.. figure:: images/console-receivers.png
+   :scale: 50%
+   :alt: jlog
+   :align: center
+
+
+Eventualmente, se la strategia osservativa lo consente, cambiare il riceivitore in uso.
+Se ad esempio si vuole arrestare il container del ricevitore CCB e questo è in uso, cambiarlo con il comando:: 
+
+   >receiversSetup=KKG
 
