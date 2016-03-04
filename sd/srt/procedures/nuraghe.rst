@@ -1,4 +1,8 @@
-.. _nuraghe-startup:
+======================
+NURAGHE
+======================
+
+
 
 
 ****************
@@ -56,6 +60,10 @@ Avvio di ACS
 Avvio dei *containers*
 ----------------------------
 
+.. index:: single: NURAGHE - Avvio container
+
+
+
 - individuare il riquadro **Containers**: contiene la lista dei container necessari, tranne che per il *LocalOscillatorsContainer*
   che necessita di una procedura di avvio separata
 
@@ -71,6 +79,9 @@ Avvio dei *containers*
   
 Container "Local Oscillators"
 +++++++++++++++++++++++++++++++++++
+
+.. index:: single: NURAGHE - Avvio  container Local Oscillators
+
 
 - aprire un terminale vuoto nel desktop virtuale **MISC** digitare ::
 
@@ -116,11 +127,79 @@ della superficie attiva. Pertanto appariranno 8 messaggi, con x da uno a 8 (N.B 
 Console di NURAGHE 
 +++++++++++++++++++++++++++++++++++++++++++++++
 
+.. index:: single: NURAGHE - Avvio  console
+
+
+.. toctree::
+   :maxdepth: 1
+
+   is_ready.rst
+
+
 Dal desktop virtuale ``CONSOLE`` di  ``nuraghe-obs1`` aprire una shell ed eseguire il comando::
 
 $> nuragheConsole
 
+*******************
+Shutdown di NURAGHE 
+*******************
+
+.. index:: single: NURAGHE - Shutdown
 
 
+- Innanzitutto chiudere la console di nuraghe. Aprire un terminale dal desktop virtuale ``CONSOLE`` di ``nuraghe-obs1`` ::
 
-     
+  $> nuragheConsole --stop
+
+- Dal desktop virtuale ``AS`` di ``nuraghe-mng`` chiudere l'interfaccia grafica della superficie attiva cliccando sul pulsante ``Quit``
+
+- Su ACS Command Center  nel desktop virtuale ``MANAGER`` chiudere i *containers* cliccando il pulsante di chiusura collettiva
+  (pulsante con quadrato nero posizionato sotto la lista dei container). In alternativa è possibile chiudere singolarmente ogni container
+
+- Chiudere il container degli oscillatori locali:
+
+  #. selezionare la shell *nuraghe-lo* sul desktop virtuale ``MISC`` di ``nuraghe-mng``
+  #. premere il tasto ``enter`` per verificare di avere il controllo del prompt
+  #. nel caso in cui non si abbia il controllo del prompt, premere ``ctrl-c``
+  #. eseguire il comando::
+
+     $ acsStopContainer LocalOscillatorsContainer
+
+- Chiudere i container relativi alla superficie attiva:
+  
+  #. selezionare una shell di *nuraghe-as* sul desktop virtuale ``AS`` di nuraghe-mng
+  #. premere il tasto ``enter`` per verificare di avere il controllo del prompt
+  #. nel caso in cui non si abbia il controllo del prompt, premere ``ctrl-c``
+  #. eseguire il comando::
+
+     $ ~/SRTStopActiveSurfaceContainer.sh
+
+
+- Su ACS Command Center, chiudere l' ``ACS Suite`` premendo il pulsante ``stop`` nell'omonimo riquadro.
+
+.. note:: 
+
+   In certi casi il processo di chiusura di *ACS* può lasciare attivo qualche processo precludendo 
+   la chiusura pulita di tutto il sistema. In tal caso eseguire il comando **killACS** e attendere
+   il messaggio *Removing ACS_INSTANCE temporary directories ... done*   
+
+***************************************************
+Riavvio container  Backends, FitsZilla o Management
+***************************************************
+.. index:: single: NURAGHE - Avvio  container Local Oscillators
+
+
+I container dei Backends (i.e. TotalPowerContainer, XContainer e RoachContainer), il ManagementContainer e il FitsZillaContainer sono profondamente collegati tra loro. 
+Pertanto, se uno di essi deve essere riavviato anche gli altri lo devono essere.
+
+
+ #. Prendere nota dei messaggi di errore da ``jlog``
+ #. Chiudere ogni console (nuragheConsole -stop su nuraghe-obs1 o nuraghe-mng a seconda del server sul quale è aperta)
+ #. Chiudere  ``FitsZillaContainer``
+ #. Chiudere  ``TotalPowerContainer``,  ``XContainer`` e ``RoachContainer``
+ #. Chiudere  ``ManagementContainer``
+ #. Riavviare  ``FitsZillaContainer``
+ #. Riavviare  ``ManagementContainer``
+ #. Riavviare ``TotalPowerContainer``,  ``XContainer`` e ``RoachContainer`` 
+ #. Riavviare la console
+

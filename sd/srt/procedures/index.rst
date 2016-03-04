@@ -9,8 +9,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   startup.rst
-   shutdown.rst
+   nuraghe.rst
    stow.rst
    backends.rst
    minor_servo.rst

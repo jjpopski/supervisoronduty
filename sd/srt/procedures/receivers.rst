@@ -25,7 +25,7 @@ Per verificare che lo script di monitoraggio sia attivo, da nuraghe-mng dare il 
 
 Se è attivo, nella risposta al comando comparirà un messaggio simile al seguente::
 
-gavino   19266  0.5  0.1  64260 14708 pts/4    Sl   13:59   0:00 /alma/ACS-8.2/Python/bin/python /home/gavino/Nuraghe/introotTrunk/bin/receiversmonitor.py
+  gavino   19266  0.5  0.1  64260 14708 pts/4    Sl   13:59   0:00 /alma/ACS-8.2/Python/bin/python /home/gavino/Nuraghe/introotTrunk/bin/receiversmonitor.py
 
 Se non dovesse essere attivo:
 
