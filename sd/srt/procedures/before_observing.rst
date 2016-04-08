@@ -30,5 +30,5 @@ Se sono attivi emergency stop:
 .. toctree::
    :maxdepth: 2
 
-    is_ready.rst
+   is_ready.rst
   

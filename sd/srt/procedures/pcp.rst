@@ -1,9 +1,7 @@
-.. _pcp::
-
-
+.. _pcp:
 
 Pannello di controllo PCP
----------------------------------------------------
+-------------------------
 
 Il pannnello di controllo del PCP e' aperto sulla postazione ``ACU-PCP``
 

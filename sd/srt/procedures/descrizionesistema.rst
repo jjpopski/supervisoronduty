@@ -1,9 +1,8 @@
 .. _descr:
 
 
-==========================
 Descrizione Sistema di controllo 
-==========================
+================================
 
 NURAGHE è il sistema di controllo di SRT ed è distribuito su  4 server:
 
@@ -26,7 +25,7 @@ NURAGHE ha accesso tramite tcp/ip  ad altre risorse:
 
 
 Postazioni utente
-----------------------------------------------------------
+-----------------
 
 Gli SD hanno accesso alle seguenti postazioni utente:
 
@@ -39,13 +38,13 @@ Gli SD hanno accesso alle seguenti postazioni utente:
 Le  prime 4 sono collocate in control room, la quinta nella stanza ALER in antenna. 
 
 nuraghe-obs1
-+++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~
 
 E' la console operativa di nuraghe, contiene i client testuali dei sotto sistemi di nuraghe e la shell di operator input.
 Inoltre ospita la console vlbi
 
 nuraghe-mng
-+++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~
 
 La postazione utente 
 
@@ -54,13 +53,13 @@ La postazione utente
 - Consente l'esecuzione dei tool di diagnostica utili per seguire il corretto svolgimento delle osservazioni
 
 nuraghe-obs3
-+++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~
 
 Attualmente questo server ha solamente l'utente observer (pw solita) e
 viene utilizzato per accedere a nuraghe-obs2 come utente scicom via vnc.
 
 ACU-LCP
-+++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~
 
 Local Control Panel.
 Situato il ALER, è il pannello di controllo della Antenna Control Unit (ACU), per controllare il comportamento dei servo sistemi principali,
@@ -68,18 +67,9 @@ ovvero gli assi di azimuth ed elevazione ed il cable wrap. Eventualmente permett
 impostata per il controllo :ref:`locale <antenna>`
 
 ACU-PCP
-+++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~
 
 Primary Control Panel, è la replica del ACU_LCP in Control Room. 
 
 Se la modalità di controllo dell'ACU è  impostata su :ref:`remoto <antenna>` 
 il pannello è unicamente informativo e pertanto i pulsanti non sortiscono nessuna azione e non aprono finestre informative.
-
- 
-
-
-
-
-
-
-

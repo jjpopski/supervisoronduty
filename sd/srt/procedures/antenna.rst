@@ -1,15 +1,15 @@
 .. _antenna:
 
 
-=================
+===========================================
 Procedure Servo sistemi  Maggiori (Antenna)
-=================
+===========================================
 
-.. _acu_description
+.. _acu_description:
 
 
 Operazioni in Alidade Equipment Room
----------------
+------------------------------------
 
 Per eseguire le procedure qui sotto descritte è necessario recarsi
 nell' Alidade Equipment Room (ALER), dove  si trovano le seguenti risorse:
@@ -36,10 +36,7 @@ In BOX CR è collocato il Portable Control Panel (PCP)
    :scale: 50%
    :alt: rack1
 
-    PCU: Portable Control Panel
-
-
-.. _acu_local:
+   PCU: Portable Control Panel
 
 
 Local Control Panel
@@ -52,7 +49,7 @@ Nella figura sottostante, il LCP e' nel rack di sinistra.
 Per operare tramite l'LCP occorre: 
 
 - effettuare login. Se la schermata è bloccata, vengono richieste credenziali. 
-- se il pannello LCP non e' avviato, comparirà il desktop window xp, in tal caso avviarlo cliccando su ``srt_lcp_mt42.exe`
+- se il pannello LCP non e' avviato, comparirà il desktop window xp, in tal caso avviarlo cliccando su ``srt_lcp_mt42.exe``
 
 .. figure:: images/lcp_panel.png
    :scale: 50%
@@ -82,10 +79,10 @@ Per operare tramite l'LCP occorre:
 
 
 ACU: controllo locale 
-----------------------
+---------------------
 
 - Identificare l'interruttore a chiave ``remote/locale`` e la lampadina *local control*
-nel *control panel* nel pannello *+C1*
+  nel *control panel* nel pannello *+C1*
   
 Per operare in modalità ``locale`` è necessario:
 
@@ -99,10 +96,10 @@ Quando la modalità ``locale`` è attivata la lampadina *local control* è acces
 .. _acu_remote:
 
 ACU: controllo remoto 
-------------------------------
+---------------------
 
 - Identificare l'interruttore a chiave ``remote/locale`` e la lampadina *local control*
-nel *control panel* nel pannello *+C1*
+  nel *control panel* nel pannello *+C1*
 
 - aprire la finestra di plexiglas del pannello di controllo (dotarsi di apposita chiave);
 - girare la chiave dell'interruttore ``remote/locale`` nella posizione ``remote``
@@ -112,7 +109,7 @@ Quando la modalità ``remote`` è attivata, il led *local control* è spenta.
 .. _stow_LCP:
 
 Antenna in stow tramite ACU
-------------------------------
+---------------------------
 
 - Recarsi in stanza ALER
 - attivare :ref:`locale <acu_local>` ACU 
@@ -124,13 +121,14 @@ Antenna in stow tramite ACU
 ..  _override:
 
 OVERRIDE EMERGENCY STOP
--------------------------------
+-----------------------
 
-.. information ::
+.. important::
 
     La procedura permette di bypassare gli emergency stop di bassa priorità.
     Sono ad alta priorità gli emercency stop del PCU e del cabinet +C1 e non
-    possono essere bypassati da questa procedura.     Tutti gli altri emergency stop sono a bassa priorità. 
+    possono essere bypassati da questa procedura. Tutti gli altri emergency
+    stop sono a bassa priorità. 
 
 
     La sicurezza durante l'operazione è garantita da un dispositivo vigilante. 
@@ -166,7 +164,7 @@ Per continuare la procedura occorre:
 .. _ECU_stow:
 
 STOW dell'antenna in modalità ECU 
--------------------------------------------
+---------------------------------
 
 **Operatori richiesti in antenna**: 2 
 
@@ -180,7 +178,7 @@ di raggiungere i limit switch.
 
 
 Movimentazione in STOW tramite ECU
--------------------------------------------------------
+----------------------------------
 
 **Operatori richiesti in antenna**: 2 
 
@@ -253,8 +251,3 @@ Selezione Motori
 
 L'ECU può essere utilizzato con un numero qualsiasi di motori disponibili. Se un motore non e' disponibile
 in quanto guasto, non selezionarlo
-
-
-
-
- 

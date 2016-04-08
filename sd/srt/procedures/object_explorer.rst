@@ -1,8 +1,8 @@
-.. _objexp::
+.. _objexp:
 
 
 Object Explorer
--------------------------
+---------------
 
 .. index:: Object Explorer
 

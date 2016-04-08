@@ -1,17 +1,17 @@
-=====================================
+================================
 Servo Sistemi Maggiori (Antenna)
-=====================================
+================================
  
 Il corretto funzionamento dei servo sistemi maggiori viene controllato tramite la console  ACU-PCP.
 
 
 Servo timeout error
-********************************
+*******************
 
 .. index:: pair: Servo Sistemi Maggiori; Timeout error 
 
-Come riconoscere il problema.
------------------------------
+Come riconoscere il problema
+----------------------------
 
 Di solito si può manifestare dopo una procedura di ``unstow``, all'atto di attivare gli assi.
 Nel pannello di controlo del :ref:`PCP <pcp>`  uno dei riquadri ``error`` diventa rosso e l'asse corrispondente non viene attivato
@@ -25,7 +25,7 @@ Nel pannello di controlo del :ref:`PCP <pcp>`  uno dei riquadri ``error`` divent
 
 
 Soluzione
--------------
+---------
 
 #. effettuare l'acknowledge dell'errore tramite comando  ``antennaReset`` nella console di NURAGHE
 #. rimettere l'antenna in modalità track tramite comando ``antennaTrack`` nella console di NURAGHE
@@ -41,14 +41,14 @@ Soluzione
 
 
 Servo Power Error
-********************************
+*****************
 
 .. index:: pair: Servo Sistemi Maggiori; Timeout error 
    
 Indica un problema nella fornitura di corrente all'ACU (errore nella fase o valori di tensione oltre l'intervallo operativo)
 
-Come riconoscere il problema.
------------------------------
+Come riconoscere il problema
+----------------------------
  
 Nel pannello di controllo :ref:`PCP <pcp>`  i riquadri *error* sono in condizione di errore (colore rosso) e
 indicano l'errore **err_Power_Error**. Inoltre, in :ref:`jlog <jlog>` appare il messaggio di errore **MAIN POWER ERROR**, con livello 
@@ -58,7 +58,7 @@ L'errore è individuabile anche tramite jlog, in quanto viene segnalato con  pri
 
 
 Soluzione
--------------
+---------
  
 Dalla console di NURAGHE, eseguire i seguenti comandi::
 

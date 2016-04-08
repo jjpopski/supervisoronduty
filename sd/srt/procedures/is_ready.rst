@@ -1,8 +1,8 @@
 .. _nuraghe-is-ready:
 
-********************************
+*********************************
 Verificare che Nuraghe sia attivo
-********************************
+*********************************
 .. index:: single: NURAGHE - Controllo se attivo
 
 - Sulla console nuraghe-mng, selezionare il desktop virtuale MNG

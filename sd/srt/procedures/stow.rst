@@ -1,6 +1,7 @@
 .. _stow:
+
 Parcheggio e messa in sicurezza dell'antenna (STOW)
-*********************************************
+***************************************************
 
 Per parcheggiare in sicurezza l'antenna eseguire la prima di queste procedure. Nel caso in cui non funzionasse, passare alla successiva:
 
@@ -12,7 +13,7 @@ Per parcheggiare in sicurezza l'antenna eseguire la prima di queste procedure. N
 .. _stownuraghe:
 
 STOW mediante NURAGHE
------------------------------------------
+---------------------
 
 Da ``operator input`` su **nuraghe-mng** eseguire i comandi::
 
@@ -56,7 +57,7 @@ premere il  **pulsante verde**, posizionato sul tavolo in prossimità della cons
 .. _stowlcp:
 
 STOW mediante il Local Control Panel (LCP) dell'ACU
-------------------------------------------------------
+---------------------------------------------------
 
 Se né la procedura di STOW mediante NURAGHE, né quella mediante pulsante di auto-stow hanno dato buon esito vuol dire che
 qualcosa di serio è accaduto.

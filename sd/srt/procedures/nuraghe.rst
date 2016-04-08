@@ -2,16 +2,15 @@
 
 
 
-======================
+*******
 NURAGHE
-======================
+*******
 
 
 
 
-****************
 Avvio di Nuraghe
-****************
+================
 
 .. index:: single: NURAGHE - Avvio
 
@@ -48,7 +47,7 @@ Questa console ha 4 desktops virtuali che hanno le seguenti funzioni:
 - Apparirà ACS Command Center. Selezionare **localhost(single-machine project)**
 
 Avvio di ACS
---------------------
+------------
 
 - Avviare ACS  cliccando il pulsante ``start`` nel riquadro **ACS suite**
 - Cliccare sul  *log tab* ``ACS`` in modo da selezionarlo:
@@ -62,7 +61,7 @@ Avvio di ACS
   E' necessario, indicativamente, circa un minuto affinché ACS sia *up and running*.
 
 Avvio dei *containers*
-----------------------------
+----------------------
 
 .. index:: single: NURAGHE - Avvio container
 
@@ -83,7 +82,7 @@ Avvio dei *containers*
    se nel log tab del container appare il messaggio ``ContainerStatusMsg: Ready``
   
 Container "Local Oscillators"
-+++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. index:: single: NURAGHE - Avvio  container Local Oscillators
 
@@ -97,7 +96,7 @@ Container "Local Oscillators"
    $ acsStartContainer -cpp LocalOscillatorsContainer &
 
 Superficie attiva
-+++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~
 
 La superficie attiva è gestita dal server *nuraghe-as*, accessibile dal desktop virtuale **AS** su nuraghe-mng dove
 sono aperte **due shell**  dalle quali effettuare una connessione *ssh*. Selezionare il desktop virtuale **AS** e 
@@ -129,22 +128,17 @@ La procudura è completata quando nellla prima shell appaiono i messaggi ``secto
 della superficie attiva. Pertanto appariranno 8 messaggi, con x da uno a 8 (N.B potrebbero non essere in sequenza.
 
 
-Console di NURAGHE 
-+++++++++++++++++++++++++++++++++++++++++++++++
+Avvio delle console di NURAGHE 
+------------------------------
 
 .. index:: single: NURAGHE - Avvio  console
-
-
-
-
 
 Dal desktop virtuale ``CONSOLE`` di  ``nuraghe-obs1`` aprire una shell ed eseguire il comando::
 
   $> nuragheConsole
 
-*******************
 Shutdown di NURAGHE 
-*******************
+===================
 
 .. index:: single: NURAGHE - Shutdown
 
@@ -185,9 +179,9 @@ Shutdown di NURAGHE
    la chiusura pulita di tutto il sistema. In tal caso eseguire il comando **killACS** e attendere
    il messaggio *Removing ACS_INSTANCE temporary directories ... done*   
 
-***************************************************
+
 Riavvio container  Backends, FitsZilla o Management
-***************************************************
+===================================================
 .. index:: single: NURAGHE - Avvio  container Local Oscillators
 
 
@@ -206,10 +200,11 @@ Pertanto, se uno di essi deve essere riavviato anche gli altri lo devono essere.
  #. Riavviare la console
 
 
-Chiusura container ricevitori
-************************************************************
+Chiusura container ricevitori durante osservazioni
+==================================================
 
-Se durante le osservazioni è necessario chiudere uno dei container dei ricevitori è importante assicurarsi che non si chiuda il ricevitore in uso.
+Se durante le osservazioni è necessario chiudere uno dei container dei ricevitori,
+è importante assicurarsi che non si chiuda il ricevitore in uso.
 Pertanto verificare nella console di nuraghe il ricevitore in uso, che nell'esempio nella figura sotto è il ricevitore CCB.
 
 .. figure:: images/console-receivers.png
