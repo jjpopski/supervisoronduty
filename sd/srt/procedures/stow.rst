@@ -15,7 +15,7 @@ Per parcheggiare in sicurezza l'antenna eseguire la prima di queste procedure. N
 STOW mediante NURAGHE
 ---------------------
 
-Da ``operator input`` su **nuraghe-mng** eseguire i comandi::
+Da ``operator input`` su **nuraghe-obs1** eseguire i comandi::
 
    >goTo=*,89d
    >servoPark

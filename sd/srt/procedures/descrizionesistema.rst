@@ -18,7 +18,7 @@ NURAGHE ha accesso tramite tcp/ip  ad altre risorse:
 
 - ACU (antenna control unit), che si occupa del controllo dei servo sistemi maggiori (assi di elevazione e azimuth e *cable wrap*)
 - MSCU (minor servo control unit) 
-- Backends (Total Power, XARCOS, ed altri)
+- Backends (Total Power, XARCOS, DBBC, SARDARA, DFB)
 - Terminali VLBI (DBBC + Mark V)
 - schede di controllo dei ricevitori
 - Centralina meteo
