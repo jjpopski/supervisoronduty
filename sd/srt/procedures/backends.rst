@@ -124,10 +124,10 @@ Con un setup corretto, il remote desktop apparirà come nella figura sottostante
 
 Il sistema permette pertanto la commutazione del percorso della IF per i backend basati
 su ROACH (ROACH-1 e SARDARA). L'utente dovrà selezionare dalla console **nuraghe-obs1**, il percorso
-adatto al ricevitore in uso. I comandi, da shell sono:
+adatto al ricevitore in uso. I comandi, da shell, sono:
 
 * setupIFPathPCK  (ricevitori P, C, e K)
 * setupIFPathL    (ricevitore L)
 
-
+Si aprirà un plot che consente di 
 
