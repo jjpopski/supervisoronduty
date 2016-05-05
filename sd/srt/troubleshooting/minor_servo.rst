@@ -35,10 +35,15 @@ servo minori. Si proceda nel seguente modo, a seconda del messaggio di log:
   :ref:`mscu-restart`.
 
 
+Flag di tracking rosso nella console, con messaggi di errore nel jlog
+=====================================================================
+
 Problema
 --------
-Nella finestra del jlog compaiono diversi messaggi di errore, aventi per 
-*Source Object* ``MinorServoBoss`` o ``WPStatusUpdater``, come
+Durante l'osservazione, nella console dei servo minori, su *nuraghe-obs1*, il
+flag di tracking diventa rosso,
+e nella finestra del jlog (*nuraghe-mng*) compaiono diversi messaggi di errore,
+aventi per *Source Object* ``MinorServoBoss`` o ``WPStatusUpdater``, come
 riportato nella seguente figura.
 
 .. figure:: figure/wpstatusupdater.png

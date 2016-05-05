@@ -98,8 +98,8 @@ Riavviare la MSCU
 =================
 La Minor Servo Control Unit (MSCU) è il server di controllo di tutti i 
 servo minori. E' un PC embedded situato all'interno del quadro elettrico
-di M3R e GFR. Prima di riavviare ls MSCU, su *nuraghe-mng*,
-nell'*acsCommandCenter*, si chiudano i container ``MinorServoBossContainer``
+di M3R e GFR. Prima di riavviare la MSCU, si vada su *nuraghe-mng* e
+nell'*acsCommandCenter* si chiudano i container ``MinorServoBossContainer`` 
 e ``MinorServoContainer``. Su *nuraghe-obs1*, si chiuda la console dei servo minori.
 A questo punto si può riavviare la MSCU.
 
