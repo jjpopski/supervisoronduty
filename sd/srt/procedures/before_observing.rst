@@ -1,7 +1,7 @@
 *************************************
 Azioni propedeutiche all'osservazione
 *************************************
-Prima che inizi l'osservazione, il SoD *deve sempre*:
+Prima che inizi l'osservazione, il SD *deve sempre*:
 
 -  :ref:`nuraghe-is-ready`, altrimenti :ref:`lo si avvii <nuraghe>`
 - verificare che non siano attivi emergency stop.
@@ -14,9 +14,19 @@ Se sono attivi emergency stop:
   - rilasciare l'emergecy stop
   - riconoscere che  la condizione di emergenza è stata superata tramite:
 
-    - il comando **antennaReset** se l'ACU è in modalità `locale <antenna>`
+    - il comando **antennaReset** se l'ACU è in modalità `remote <antenna>`
     - il pulsante **Interlock Acknowledge**, nel pannello ECP in :ref:`ALER <antenna>` 
-      se l'ACU è in modalità `remote <antenna>`
+      se l'ACU è in modalità :ref:`locale <antenna>`
+
+
+All'inizio di una sessione osservativa è necessario verificare qual è la tipologia di osservazione
+prevista: *VLBI* o *Single Dish*.
+
+In caso di osservazione *VLBI*, si rimanda alla documentazione relativa e non presente in questo manuale.
+Per le osservazioni *single dish* occorre verificare che il DBBC sia in modalità spettrometro. 
+
+Per la configurazione si rimanda alla apposita sezione dei :ref:`backends <backends>` .
+
 
 
 

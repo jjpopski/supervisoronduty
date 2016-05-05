@@ -1,3 +1,6 @@
+.. _backends:
+
+
 ********
 Backends
 ********
@@ -90,6 +93,9 @@ Prima di operare sul backend  è necessario chiudere ogni connessione con il bac
 ------------------------------------------------------------------
 DBBC
 ------------------------------------------------------------------
+
+.. index:: single: DBBC
+
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Setup modalità ''spettrometro''
