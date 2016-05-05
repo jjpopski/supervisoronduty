@@ -129,5 +129,6 @@ adatto al ricevitore in uso. I comandi, da shell, sono:
 * setupIFPathPCK  (ricevitori P, C, e K)
 * setupIFPathL    (ricevitore L)
 
-Si aprirà un plot che consente di 
+Si aprirà un plot che consente di visualizzare la banda IF che arriva al DBBC.
+
 
