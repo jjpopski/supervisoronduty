@@ -98,7 +98,12 @@ Riavviare la MSCU
 =================
 La Minor Servo Control Unit (MSCU) è il server di controllo di tutti i 
 servo minori. E' un PC embedded situato all'interno del quadro elettrico
-di M3R e GFR. Per riavviare il server ci si colleghi con *rdesktop*::
+di M3R e GFR. Prima di riavviare ls MSCU, su *nuraghe-mng*,
+nell'*acsCommandCenter*, si chiudano i container ``MinorServoBossContainer``
+e ``MinorServoContainer``. Su *nuraghe-obs1*, si chiuda la console dei servo minori.
+A questo punto si può riavviare la MSCU.
+
+Per riavviare la MSCU ci si colleghi con *rdesktop* al server::
 
     $ rdesktop-vrdp 192.168.200.16 -f -u Oper
 
@@ -134,3 +139,15 @@ di log sarà analoga a quella riportata di seguito.
    :align: center
 
    Figura: Finestra di log della MSCU al termine della procedura d'avvio
+
+Al termine della procedura, prima di riutilizzare Nuraghe, si eseguano
+(nell'ordine indicato) i seguenti step:
+
+1. Su *nuraghe-mng* si riavvi il container ``MinorServoContainer``
+2. Su *nuraghe-mng* si riavvi il container ``MinorServoBossContainer``
+3. Su *nuraghe-obs1* si riavvi la console dei servo minori (si apra una
+   shell e si esegua il comando ``minorservoBossTui``.
+4. Su *nuraghe-obs1*, dalla console *operatorInput*, si faccia il setup dei
+   servo minori. Ad esempio, per fare il setup del banda K: ``servoSetup=KKG``,
+   per il banda C ``servoSetup=CCB``.
+

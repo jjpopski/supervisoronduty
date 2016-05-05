@@ -11,30 +11,50 @@ Risolvere un setup non riuscito
 .. index:: minor servo, servoSetup
    unknown, emergency stop, failure, reset, GFR, M3R, SRP, PFP, MSCU
 
+
 Problema
 --------
-Dalla console *OperatorInput* è stato eseguito il setup (comando ``setupXXX`` 
+Dalla console *operatorInput* è stato eseguito il setup (comando ``setupXXX`` 
 oppure ``servoSetup=XXX``) ma dopo qualche minuto nella console *MinorServo* 
 il flag ``starting`` è passato da verde a rosso ed il flag ``ready`` è anche 
 lui rosso.
 
-.. note:: Inserire una immagine della console sei servo minori che mostra la 
-   situazione descritta.
 
 Soluzione
 ---------
-Su *acsCommandCenter* (macchina *nuraghe-mng*), controllare la finestra di log del container dei servo minori.
+Controllare il *jlog*. Dovrebbero comparire uno o più messaggi di log relativi ai
+servo minori. Si proceda nel seguente modo, a seconda del messaggio di log:
 
-.. note:: Inserire immagine di tale finestra di log.
+* se il messaggio di log indica "**GFR (o SRP o M3R o PFP) in failure**", molto
+  probabilmente c'è un problema non risolvibile dal SD, e la cosa va
+  semplicemente segnalata per email a tutti i SD. Prima di far ciò, si potrebbe
+  provare a riavviare la MSCU, come indicato in :ref:`mscu-restart`;
+* se è riportato "**GFR (o SRP o M3R o PFP) in emergency stop**", si vada alla
+  sezione :ref:`ms-emergency-stop`;
+* se è riportato un messaggio diverso dai precedenti, si vada alla sezione
+  :ref:`mscu-restart`.
 
-Ci sono tre possibili soluzioni, a seconda del messaggio di errore riportato nella finestra di log: 
 
-* se è riportato "**GFR (o SRP o M3R o PFP) in failure**", non ci si può far nulla, se non contattare il 
-  responsabile degli impianti (G.Paolo Vargiu) per avvisarlo del malfunzionamento. Questo è un problema
-  ricorrente, che spesso si risolve riarmando il differenziale nel quadro elettrico del servo minore
-  in avaria
-* se è riportato "**GFR (o SRP o M3R o PFP) in emergency stop**", si vada alla sezione :ref:`ms-emergency-stop`
-* se è riportato un messaggio diverso dai precedenti, si vada alla sezione :ref:`mscu-restart`
+Problema
+--------
+Nella finestra del jlog compaiono diversi messaggi di errore, aventi per 
+*Source Object* ``MinorServoBoss`` o ``WPStatusUpdater``, come
+riportato nella seguente figura.
+
+.. figure:: figure/wpstatusupdater.png
+   :scale: 100%
+   :alt: WPStatusUpdater
+   :align: center
+
+   Figura: Il Jlog riporta degli errori che hanno come *Source Object*
+   ``MinorServoBoss`` o ``WPStatusUpdater``.
+
+
+Soluzione
+---------
+Si riavvii la MSCU, come descritto nella sezione :ref:`mscu-restart`.
+
+
 
 Problemi di puntamento
 ======================
