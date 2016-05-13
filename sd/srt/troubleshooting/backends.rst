@@ -30,8 +30,8 @@ Pertanto per ripristinare l'operatività è necessario:
 
 #. Prendere nota dei messaggi di errore da ''jlog''
 #. Chiudere ogni console (nuragheConsole -stop su nuraghe-obs1 o nuraghe-mng a seconda del server sul quale è aperta)
-#. Chiudere  ``FitsZillaContainer``
 #. Chiudere  ``ManagementContainer``
+#. Chiudere  ``FitsZillaContainer``
 #. Attendere che il numero dei container attivi sia diminuito di 3 container. 
 #. Riavviare  ``FitsZillaContainer``
 #. Riavviare  ``ManagementContainer``
