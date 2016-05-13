@@ -180,24 +180,6 @@ Shutdown di NURAGHE
    il messaggio *Removing ACS_INSTANCE temporary directories ... done*   
 
 
-Riavvio container  Backends, FitsZilla o Management
-===================================================
-.. index:: single: NURAGHE - Avvio  container Local Oscillators
-
-
-I container dei Backends (i.e. TotalPowerContainer, XContainer e RoachContainer), il ManagementContainer e il FitsZillaContainer sono profondamente collegati tra loro. 
-Pertanto, se uno di essi deve essere riavviato anche gli altri lo devono essere.
-
-
- #. Prendere nota dei messaggi di errore da ``jlog``
- #. Chiudere ogni console (nuragheConsole -stop su nuraghe-obs1 o nuraghe-mng a seconda del server sul quale è aperta)
- #. Chiudere  ``FitsZillaContainer``
- #. Chiudere  ``TotalPowerContainer``,  ``XContainer`` e ``RoachContainer``
- #. Chiudere  ``ManagementContainer``
- #. Riavviare  ``FitsZillaContainer``
- #. Riavviare  ``ManagementContainer``
- #. Riavviare ``TotalPowerContainer``,  ``XContainer`` e ``RoachContainer`` 
- #. Riavviare la console
 
 
 Chiusura container ricevitori durante osservazioni
