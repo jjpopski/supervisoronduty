@@ -66,14 +66,13 @@ Avvio dei *containers*
 .. index:: single: NURAGHE - Avvio container
 
 
-- individuare il riquadro **Containers**: contiene la lista dei container necessari, tranne che per il *LocalOscillatorsContainer*
-  che necessita di una procedura di avvio separata
+- individuare il riquadro **Containers**: contiene la lista dei container necessari;
 
 - Per ciascuno dei container, cliccare sul triangolo verde (è simile al simbolo tasto play di un lettore di musicassette)
 - Con l'avvio del container, viene aperta la log tab con il nome del container, oppure nel caso in cui tale log tab  fosse
-  già aperta, viene messa in evidenza.
+  già aperta, viene messa in evidenza;
 - Avviare i container Local Oscillators e quelli della superficie attiva secondo le procedure sotto elencate.
-- Verificare che tutti i container siano attivi, controllando :ref:`l'elenco dei container <nuraghe-is-ready>`
+- Verificare che tutti i container siano attivi, controllando :ref:`l'elenco dei container <nuraghe-is-ready>`;
 
 .. note::
   
@@ -81,26 +80,14 @@ Avvio dei *containers*
    container appare nella apposita lista della finestra *Deployment info*, **oppure** 
    se nel log tab del container appare il messaggio ``ContainerStatusMsg: Ready``
   
-Container "Local Oscillators"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. index:: single: NURAGHE - Avvio  container Local Oscillators
-
-
-- aprire un terminale vuoto nel desktop virtuale **MISC** digitare ::
-
-   $ lo-ssh
-
-- dopo il login, avviare il container con::
-   
-   $ acsStartContainer -cpp LocalOscillatorsContainer &
 
 Superficie attiva
 ~~~~~~~~~~~~~~~~~
 
-La superficie attiva è gestita dal server *nuraghe-as*, accessibile dal desktop virtuale **AS** su nuraghe-mng dove
-sono aperte **due shell**  dalle quali effettuare una connessione *ssh*. Selezionare il desktop virtuale **AS** e 
-verificare che siano già aperte due *shell* su ``gavino@nuraghe-as``. Una shell aperta su gavino@nuraghe-as appare  come nella figura:
+La superficie attiva è gestita dal server *nuraghe-as*, accessibile dalla console su nuraghe-as.
+
+Aprire due shell
+
 
 .. figure: images/nuraghe_as_prompt.png
    :align: center
@@ -108,13 +95,9 @@ verificare che siano già aperte due *shell* su ``gavino@nuraghe-as``. Una shell
    :alt: prompt Nuraghe AS
 
 
-Nel caso in cui le due shell non fossero già aperte,aprire due terminali in entrambi digitare il comando::
+Nel caso in cui le due shell non fossero già aperte,aprire due terminali.
 
-  $> as-ssh
-
-
-Tale comando effettua una connessione ssh verso ``nuraghe-as``. 
-Quindi su una shell digitare i comandi::
+Quindi su una shell digitare i comandi:
 
   $> nuragheStable
   $> asContainers
@@ -163,7 +146,7 @@ Shutdown di NURAGHE
 
 - Chiudere i container relativi alla superficie attiva:
   
-  #. selezionare una shell di *nuraghe-as* sul desktop virtuale ``AS`` di nuraghe-mng
+  #. selezionare una shell di *nuraghe-as*;
   #. premere il tasto ``enter`` per verificare di avere il controllo del prompt
   #. nel caso in cui non si abbia il controllo del prompt, premere ``ctrl-c``
   #. eseguire il comando::
@@ -178,8 +161,6 @@ Shutdown di NURAGHE
    In certi casi il processo di chiusura di *ACS* può lasciare attivo qualche processo precludendo 
    la chiusura pulita di tutto il sistema. In tal caso eseguire il comando **killACS** e attendere
    il messaggio *Removing ACS_INSTANCE temporary directories ... done*   
-
-
 
 
 Chiusura container ricevitori durante osservazioni
