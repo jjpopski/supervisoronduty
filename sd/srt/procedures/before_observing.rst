@@ -31,7 +31,7 @@ Per la configurazione si rimanda alla apposita sezione dei :ref:`backends <backe
 
 
 .. important:: Il SoD non deve partire dall'assunzione che il sistema 
-   sia funzionante nemmeno nel caso in cui il SoD che ha appena terminato il 
+   sia funzionante nemmeno nel caso in cui il SD che ha appena terminato il 
    turno gli garantisca che tutto è OK.
    Quindi **prima che inizi l'osservazione** deve sempre seguire scrupolosamente
    la procedura appena descritta, accertandosi che tutti gli step diano 

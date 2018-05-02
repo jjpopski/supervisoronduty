@@ -14,7 +14,7 @@ Contents:
    backends.rst
    minor_servo.rst
    receivers.rst
-   antenna.rst
+   antenna_stow.rst
 
 
 

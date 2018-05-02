@@ -12,7 +12,7 @@ Verificare che Nuraghe sia attivo
    :alt: nuraghe up
    :align: center
 
-- verificare che nel riquadro **deployment info**  siano indicati **32** Container attivi:  
+- verificare che nel riquadro **deployment info**  siano indicati **31** Container attivi:  
 
   #. AntennaBossContainer
   #. AntennaContainer
@@ -21,7 +21,6 @@ Verificare che Nuraghe sia attivo
   #. DerotatorPositionerContainer
   #. ExternalClientsContainer
   #. FitsZillaContainer
-  #. LocalOscillatorsContainer
   #. LocalOscillatorsLPContainer
   #. LoggerContainer
   #. ManagementContainer
