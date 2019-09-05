@@ -4,15 +4,13 @@
 Descrizione Sistema di controllo 
 ================================
 
-NURAGHE è il sistema di controllo di SRT ed è distribuito su 2 server:
+DISCOS è il sistema di controllo di SRT ed è distribuito su 2 server:
 
-#. nuraghe-mng.srt.inaf.it
-#. nuraghe-as.srt.inaf.it
+#. discos-manager.srt.inaf.it
+#. discos-console.srt.inaf.it
 
-nuraghe-mng e nuraghe-obs1 sono accessibili mendiante le rispettive postazioni utente, mentre nuraghe-as e nuraghe-lo sono accessibili 
-unicamente tramite ssh. Per tutti i server lo username di riferimento e' ``gavino``
- 
-NURAGHE ha accesso tramite tcp/ip  ad altre risorse:
+
+DISCOS ha accesso tramite tcp/ip  ad altre risorse:
 
 - ACU (antenna control unit), che si occupa del controllo dei servo sistemi maggiori (assi di elevazione e azimuth e *cable wrap*)
 - MSCU (minor servo control unit) 
